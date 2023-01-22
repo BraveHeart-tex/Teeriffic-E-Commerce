@@ -1,12 +1,41 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
-import heroBcg from '../assets/hero-bcg.jpeg'
-import heroBcg2 from '../assets/hero-bcg-2.jpeg'
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import heroBcg from '../assets/hero-bcg.jpeg';
+import heroBcg2 from '../assets/hero-bcg-2.jpeg';
 
 const Hero = () => {
-  return <h4>hero</h4>
-}
+  return (
+    <Wrapper className='section-center'>
+      <article className='content'>
+        <h1>
+          design your <br />
+          comfort zone
+        </h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+          mollitia dolorem reprehenderit consequuntur amet quis quam ex facilis
+          quibusdam dolore?
+        </p>
+        <Link to='/products' className='btn hero-btn'>
+          Shop Now
+        </Link>
+      </article>
+      <article className='img-container'>
+        <img
+          src={heroBcg}
+          alt='Elegant wood colored table with books on top of it'
+          className='main-img'
+        />
+        <img
+          src={heroBcg2}
+          alt='A man with a white hat working on a woodwork'
+          className='accent-img'
+        />
+      </article>
+    </Wrapper>
+  );
+};
 
 const Wrapper = styled.section`
   min-height: 60vh;
@@ -68,6 +97,6 @@ const Wrapper = styled.section`
       border-radius: var(--radius);
     }
   }
-`
+`;
 
-export default Hero
+export default Hero;
