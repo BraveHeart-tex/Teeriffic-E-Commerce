@@ -15,17 +15,17 @@ root.render(
   <Auth0Provider
     domain={process.env.REACT_APP_AUTH_DOMAIN}
     clientId={process.env.REACT_APP_AUTH_CLIENT_ID}
-    authorizationParams={{
-      redirect_uri: window.location.origin,
-    }}
     cacheLocation='localstorage'
+    redirectUri={window.location.origin}
   >
-    <ProductsProvider>
-      <FilterProvider>
-        <CartProvider>
-          <App />
-        </CartProvider>
-      </FilterProvider>
-    </ProductsProvider>
+    <UserProvider>
+      <ProductsProvider>
+        <FilterProvider>
+          <CartProvider>
+            <App />
+          </CartProvider>
+        </FilterProvider>
+      </ProductsProvider>
+    </UserProvider>
   </Auth0Provider>
 );
