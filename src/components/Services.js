@@ -8,11 +8,13 @@ const Services = () => {
       <div className='section-center'>
         <article className='header'>
           <h3>
-            custom furniture <br /> built only for you
+            Elevate your style <br /> with Teeriffic
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non
-            ullam illo incidunt perferendis? Ad ea voluptatum atque dolor sit!
+            Our shirts are designed to elevate your style, making you stand out
+            from the crowd. Whether you're dressing up for a night out or
+            keeping it casual, our shirts are the perfect addition to any
+            outfit.
           </p>
         </article>
         <div className='services-center'>

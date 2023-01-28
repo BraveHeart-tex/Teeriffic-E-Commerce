@@ -9,13 +9,15 @@ const Hero = () => {
     <Wrapper className='section-center'>
       <article className='content'>
         <h1>
-          design your <br />
-          comfort zone
+          Wear your style <br />
+          make a statement
         </h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
-          mollitia dolorem reprehenderit consequuntur amet quis quam ex facilis
-          quibusdam dolore?
+          Our company believes that fashion is a form of self-expression.Whether
+          you want to show off your personality, make a political statement, or
+          just look good, our t-shirts are the perfect way to do it. So, wear
+          your style and make a statement with our high-quality, comfortable,
+          and trendy t-shirts.
         </p>
         <Link to='/products' className='btn hero-btn'>
           Shop Now

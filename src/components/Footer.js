@@ -5,9 +5,9 @@ const Footer = () => {
     <Wrapper>
       <h5>
         &copy; {new Date().getFullYear()}
-        <span> Comfy Sloth</span>
+        <span> Teeriffic</span>
       </h5>
-      <h5 style={{ marginLeft: '10px' }}> All rights reserved.</h5>
+      <h5 style={{ marginLeft: '8px' }}>All rights reserved.</h5>
     </Wrapper>
   );
 };
