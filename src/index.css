@@ -11,13 +11,13 @@ Variables
   --clr-primary-3: #0369a1;
   --clr-primary-4: #0284c7;
   /* primary/main color */
-  --clr-primary-5: #0ea5e9;
+  --clr-primary-5: rgb(14, 165, 233);
   /* lighter shades of primary color */
   --clr-primary-6: #38bdf8;
-  --clr-primary-7: #7dd3fc;
+  --clr-primary-7: rgb(125, 212, 252);
   --clr-primary-8: #bae6fd;
-  --clr-primary-9: #e0f2fe;
-  --clr-primary-10: #f0f9ff;
+  --clr-primary-9: rgb(224, 242, 254);
+  --clr-primary-10: rgb(240, 249, 255);
   /* darkest grey - used for headings */
   --clr-grey-1: #18181b;
   --clr-grey-2: #27272a;

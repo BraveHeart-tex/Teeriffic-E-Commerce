@@ -93,7 +93,7 @@ const CheckoutForm = () => {
   return (
     <div>
       {succeeded ? (
-        <article>
+        <article style={{ textAlign: 'center' }}>
           <h4>Thank you</h4>
           <h4>Your payment was successful!</h4>
           <h4>
@@ -108,6 +108,17 @@ const CheckoutForm = () => {
         </article>
       )}
       <form id='payment-form' onSubmit={handleSubmit}>
+        <label htmlFor='name'>Full Name</label>
+        <input
+          type='text'
+          name='name'
+          id='name'
+          value={myUser && myUser.name}
+        />
+        <label htmlFor='address1'>Address 1</label>
+        <input type='text' name='address1' id='address1' required />
+        <label htmlFor='address2'>Address 2</label>
+        <input type='text' name='address2' id='address2' />
         <CardElement
           id='card-element'
           options={cardStyle}
@@ -123,12 +134,13 @@ const CheckoutForm = () => {
             {error}
           </div>
         )}
-        <p className={succeeded ? 'result-message' : 'result-message hidden'}>
-          Payment succeeded, see the result in your{''}
-          <a href={`https://dashboard.stripe.com/test/payments`}>
-            Stripe Dashboard.{''}
-          </a>
-          Refresh the page to pay again
+        <p
+          style={{ marginTop: '16px' }}
+          className={succeeded ? 'result-message' : 'result-message hidden'}
+        >
+          Payment succeeded, thank you for shopping with{' '}
+          <span style={{ color: '#0ea5e9' }}>Tee</span>
+          <span style={{ color: '#18181b' }}>riffic</span> ❤️
         </p>
       </form>
     </div>
@@ -154,6 +166,10 @@ const Wrapper = styled.section`
       0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
     border-radius: 7px;
     padding: 40px;
+    margin: 36px auto;
+  }
+  article {
+    margin-top: 16px;
   }
   input {
     border-radius: 6px;
@@ -193,6 +209,7 @@ const Wrapper = styled.section`
     width: 100%;
     background: white;
     box-sizing: border-box;
+    margin-top: 16px;
   }
   #payment-request-button {
     margin-bottom: 32px;
