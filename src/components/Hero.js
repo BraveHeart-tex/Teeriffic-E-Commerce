@@ -26,12 +26,12 @@ const Hero = () => {
       <article className='img-container'>
         <img
           src={heroBcg}
-          alt='Elegant wood colored table with books on top of it'
+          alt='A woman wearing a white colored Teeriffic t-shirt'
           className='main-img'
         />
         <img
           src={heroBcg2}
-          alt='A man with a white hat working on a woodwork'
+          alt='A man wearing red colored Teeriffic t-shirt'
           className='accent-img'
         />
       </article>
