@@ -99,6 +99,11 @@ const Wrapper = styled.section`
       border-radius: var(--radius);
     }
   }
+  @media (max-width: 380px) {
+    article {
+      padding: 32px 0;
+    }
+  }
 `;
 
 export default Hero;
