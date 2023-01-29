@@ -6,6 +6,9 @@
 - I used <strong>axios</strong> for data fetching and dotenv for managing sensitive information.
 - The server side is powered by <strong>Netlify serverless functions</strong> for a reliable and efficient service.
 
+# LIVE Demo
+<p>You can checkout the live demo of application on netlify via this <a href="https://teeriffic.netlify.app">link</a></p>
+
 # Showcase
 
 ## Mobile View
