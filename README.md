@@ -82,13 +82,25 @@ git clone https://github.com/BraveHeart-tex/Teeriffic-E-Commerce
 npm install or yarn add
 ```
 
-3. Run the development server. This will run the `netlify dev` command
+3. In the root of the project, create a .env file. Provide the fields below.
+
+```
+REACT_APP_AUTH_DOMAIN=YOUR AUTH0 DOMAIN
+REACT_APP_AUTH_CLIENT_ID=YOUR AUTH0 CLIENT ID
+REACT_APP_STRIPE_PUBLIC_KEY=YOUR STRIPE PUBLIC KEY
+REACT_APP_STRIPE_SECRET_KEY=YOUR STRIPE SECRET KEY
+AIRTABLE_API_KEY=YOUR AIRTABLE API KEY
+AIRTABLE_BASE=YOUR AIRTABLE BASE ID
+AIRTABLE_TABLE=YOUR AIRTABLE TABLE NAME
+```
+
+4. Run the development server. This will run the `netlify dev` command
 
 ```sh
 npm run dev
 ```
 
-4. Build for production
+5. Build for production
 
 ```sh
 npm run build
